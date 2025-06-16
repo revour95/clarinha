@@ -14,10 +14,12 @@ html, body {
   padding: 20px;
 }
 .container img {
-  max-width: 70%;
+  /* antes: max-width: 70%; height: auto; */
+  width: 70%;            /* define a largura inicial */
   height: auto;
-  transition: transform 0.3s ease;
+  transition: width 0.3s ease;  /* anima a mudança de largura */
   cursor: pointer;
+  /* remove qualquer transform-origin aqui, pois não vamos usar transform */
 }
 .container p {
   margin-top: 1em;
